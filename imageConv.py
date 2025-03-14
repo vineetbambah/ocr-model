@@ -11,6 +11,5 @@ for file in Path('./images').iterdir():
         img = Image.open(file)
         img = ImageOps.invert(img)
         img = ImageEnhance.Contrast(img).enhance(1.2)
-        print(f'./images/inverted/inverted_{file.name}')
-        img.save(f'./images/inverted/inverted_{file.name}', 'PNG')
+        
 
